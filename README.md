@@ -6,8 +6,10 @@ PipeWire and WirePlumber configuration for the RODE RODECaster Pro II on Linux.
 
 - Automatically sets the **Pro Audio** profile exposing all channels
 - Renames devices to match Windows naming convention:
-  - **RODECaster Pro II - USB 1 Main** - Primary stereo input/output
-  - **RODECaster Pro II - USB 1 Chat** - Dedicated channel for Discord/Skype/communication apps
+  - **USB 1 Chat-Out** - Output to Chat channel (for Discord/Skype/etc.)
+  - **USB 1 Main-In** - Input from Main mix output
+  - **USB 1 Chat-In** - Input from Chat channel
+  - **USB 2 Main-In** - Input/output for secondary device
   - **RODECaster Pro II - Multitrack** - 16-channel input for individual fader recording
 
 ## Requirements
@@ -60,9 +62,10 @@ After installation, your RODECaster Pro II will expose:
 
 | Name | Type | Description |
 |------|------|-------------|
-| RODECaster Pro II - USB 1 Main | Output | Send audio to the RODECaster main mix |
-| RODECaster Pro II - USB 1 Chat | Output | Send audio to the RODECaster chat channel (for Discord, etc.) |
-| RODECaster Pro II - USB 1 Main | Input | Receive the main stereo mix from RODECaster |
+| USB 1 Chat-Out | Output | Send audio to the Chat channel (for Discord, etc.) |
+| USB 1 Main-In | Output | Input from Main mix (loopback) |
+| USB 1 Chat-In | Input | Receive audio from Chat channel |
+| USB 2 Main-In | Input/Output | Secondary device Main mix |
 | RODECaster Pro II - Multitrack | Input | Receive all 16 individual channels for multitrack recording |
 
 ## Troubleshooting
